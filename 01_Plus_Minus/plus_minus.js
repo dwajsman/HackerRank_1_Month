@@ -35,10 +35,15 @@ function plusMinus(arr) {
     let negativeElementCount = 0;
 
     //count number of negative integers
+    arr.forEach(element => {
+        if (element < 0) {
+            negativeElementCount++;
+        }
+    });
 
     //calculate rate of negative int, limited to 6 decimals
 
-    //return result
+    //print result
 
 }
 
