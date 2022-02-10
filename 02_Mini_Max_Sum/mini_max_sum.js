@@ -28,6 +28,13 @@ function readLine() {
 
 function miniMaxSum(arr) {
     // Write your code here
+    // reorder items in array
+    
+    //create Min sum (sum first 4 items)
+    
+    //create Max sum (sum 4 last items)
+    
+    
 
 }
 
