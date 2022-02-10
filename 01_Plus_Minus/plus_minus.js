@@ -28,23 +28,34 @@ function readLine() {
 
 function plusMinus(arr) {
     // Write your code here
-
+    
     //init variables 
-    let rate = 0;
     const elementCount = arr.length;
+    let positiveElementCount = 0;
     let negativeElementCount = 0;
+    let zeroElementCount = 0;
 
     //count number of negative integers
     arr.forEach(element => {
         if (element < 0) {
             negativeElementCount++;
+        } else if (element > 0) {
+            positiveElementCount++;
+        } else {
+            zeroElementCount++;
         }
     });
-
+    
     //calculate rate of negative int, limited to 6 decimals
+    function rate(count){
+        return (count/elementCount).toFixed(6);
+    }
 
-    //print result
-
+    //print result 
+    console.log(rate(positiveElementCount));
+    console.log(rate(negativeElementCount));
+    console.log(rate(zeroElementCount));
+    
 }
 
 function main() {
